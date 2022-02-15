@@ -10,8 +10,7 @@ class DataHendler:
 
     def get_numbers_from_api(self, url_request):
         page_number = 1
-        # while True:
-        for item in range(2):
+        while True:
             request = requests.get(url_request + str(page_number))
             if request.json().get("numbers") != []:
                 try:

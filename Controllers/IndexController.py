@@ -4,7 +4,7 @@ from server.instance import server
 app = server.app
 
 
-class IndexController:
+class IndexController():
     @app.route("/")
     def start():
         return "Desafio Python"
